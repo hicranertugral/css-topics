@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      body {
+        background-color: coral;
+        /* CSS Reset */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Class Selector */
+      .primary-heading {
+        color: crimson;
+      }
+
+      .note {
+        background-color: coral;
+      }
+
+      /* Id Selector */
+      #welcome {
+        background-color: bisque;
+      }
+
+      /* multiple Selector "," */
+      #welcome,
+      #about {
+        border: 2px solid burlywood;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      /* Nested Selector */
+      #welcome p {
+        font-size: 15px;
+      }
+
+      /* Direct Child Selector */
+      #welcome > p {
+        color: rgb(82, 54, 54);
+      }
+
+      #about {
+        color: rgb(133, 68, 22);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h4 class="primary-heading">Welcome</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+        voluptatum dicta ipsa, minus officia cumque rem obcaecati perspiciatis
+        magnam cupiditate vitae reprehenderit officiis quae rerum nostrum a
+        doloremque tempora. Atque ab ut molestiae voluptas voluptates facere
+        excepturi quia fugit, necessitatibus asperiores, hic possimus aut?
+        Obcaecati numquam voluptatum exercitationem recusandae! Voluptatum.
+      </p>
+      <div>
+        <p class="note">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+          architecto amet recusandae.
+        </p>
+      </div>
+    </div>
+
+    <div id="about">
+      <h4>About</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero aut magni
+        explicabo quisquam modi, tenetur cum quam nam repellendus asperiores
+        inventore officia recusandae ipsum possimus at in amet voluptates
+        laboriosam molestiae quod commodi ab ipsa quis similique! At, explicabo
+        velit!
+      </p>
+    </div>
+  </body>
 </html>
