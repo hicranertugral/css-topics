@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline - Block</title>
+    <style>
+        li{
+            display: inline;
+        }
+
+        li a{
+            padding-right: 20px;
+            text-decoration: none;
+            color: cadetblue;
+        }
+
+        .box{
+            /* inline margin auto kullanamazsınız */
+            display: inline-block;
+            width: 32%;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+            padding: 30px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        img{
+            /* img inline element yanyana geliyor */
+            display: block; /* resimleri alt alta getirdi*/
+            margin: auto; /* resimleri ortaladı.*/
+        }
+
+        .container{
+            width: 90%;
+            margin: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">Technology</a></li>
+      <li><a href="">Business</a></li>
+      <li><a href="">Fashion</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <br /><br />
+
+    <div class="container">
+      <!-- (.box>h3{Heading}p>(lorem15))*3 -->
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab illum
+          beatae delectus, illo tenetur facilis!delectus, illo tenetur facilis!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Cupiditate, mollitia veniam. Earum ipsam saepe quasi quia magnam
+          necessitatibus libero debitis aperiam voluptatem ab!
+        </p>
+      </div>
+      <div class="box">
+        <h3>Heading</h3>
+        <p>
+          Possimus, quia nihil! Asperiores error veritatis distinctio quam
+          corporis nostrum atque ipsum voluptatem voluptatum ratione.
+        </p>
+      </div>
+    </div>
+    <img src="img/leaf.png" alt="" />
+    <img src="img/leaf.png" alt="" />
+    <img src="img/leaf.png" alt="" />
+  </body>
+</html>
