@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* Navbar */
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: cadetblue;
+        border-radius: 5px;
+        /* taştığında yanına scrool var demek burada background rengini getirmek için kullandık */
+        overflow: auto;
+      }
+
+      .navbar li {
+        float: left;
+      }
+
+      .navbar li a {
+        color: azure;
+        /* a inline element olduğu için content kadar yer kaplayabiliyor. 
+            inline olduğu için genişlik ve yükseklil verebilmek için display block vermemiz gerekiyor. */
+        display: block;
+        text-decoration: none;
+        padding: 15px 20px;
+      }
+
+      .navbar li a:hover {
+        background-color: cornflowerblue;
+      }
+      /* side menü */
+      .side-menu {
+        list-style: none;
+        border: 1px darkblue solid;
+        border-radius: 10px;
+        width: 180px;
+        padding: 20px;
+      }
+
+      .side-menu li {
+        font-size: 18px;
+        font-weight: 800px;
+        line-height: 32px;
+        border-bottom: 1px darkblue dotted;
+      }
+
+      .side-menu li:last-child {
+        /* contactı altındaki dotted borderını kaldırdı 
+        list child css içinde olan bir şey ayrıca bir şey tanımlamadık */
+        border: none;
+      }
+
+      .side-menu li a {
+        color: cadetblue;
+        text-decoration: none;
+      }
+
+      .side-menu li a:hover {
+        color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <ul class="side-menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </body>
+</html>
