@@ -5,45 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Float</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .container {
+        /* cok genişlemesin istiyoru containerın div olduğu için block eleman */
+        max-width: 640px;
+        margin: 30px auto;
+      }
+
+      .box {
+        background-color: azure;
+        border: 2px solid darkblue;
+        margin-bottom: 15px;
+        padding: 20px;
+      }
+
+      .box p{
+        /* tet align hizalama */
+        text-align: left;
+        text-align: right;
+        /* seçili her yazıyı ortalıyor */
+        text-align: center;
+        /* iki yana yaslama */
+        text-align: justify;
+      }
+
+      #box-2{
+        float: left;
+        width: 60%;
+        /* height: 222px; */
+      }
+
+      #box-3{
+        float: right;
+        width: 34%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+    
+    </style>
   </head>
   <body>
+    <div class="container">
+      <!-- (.box#box-$>h3{Heading Box-$}p>(lorem20))*4 -->
+      <div class="box" id="box-1">
+        <h3>Heading Box-1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsum
+          ut excepturi sapiente iste vel? Enim non repellat error fugiat!
+        </p>
+      </div>
 
-    <!-- (.box#box-$>h3{Heading Box-$}p>(lorem20))*4 -->
-    <div class="box" id="box-1">
-      <h3>Heading Box-1</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsum
-        ut excepturi sapiente iste vel? Enim non repellat error fugiat!
-      </p>
-    </div>
+      <div class="box" id="box-2">
+        <h3>Heading Box-2</h3>
+        <p>
+          Inventore quae, harum facere corrupti distinctio consequatur alias
+          tempore veritatis ducimus aliquid culpa ut a unde nostrum qui placeat
+          maxime?
+        </p>
+      </div>
 
-    <div class="box" id="box-2">
-      <h3>Heading Box-2</h3>
-      <p>
-        Inventore quae, harum facere corrupti distinctio consequatur alias
-        tempore veritatis ducimus aliquid culpa ut a unde nostrum qui placeat
-        maxime?
-      </p>
-    </div>
+      <div class="box" id="box-3">
+        <h3>Heading Box-3</h3>
+        <p>
+          Neque magnam, doloremque itaque beatae deserunt ut consequatur fugit,
+          asperiores porro distinctio saepe. Perferendis at aliquam placeat
+          illum velit laboriosam?
+        </p>
+      </div>
 
-    <div class="box" id="box-3">
-      <h3>Heading Box-3</h3>
-      <p>
-        Neque magnam, doloremque itaque beatae deserunt ut consequatur fugit,
-        asperiores porro distinctio saepe. Perferendis at aliquam placeat illum
-        velit laboriosam?
-      </p>
-    </div>
+      <div class="clr"></div>
 
-    <div class="clr"></div>
-
-    <div class="box" id="box-4">
-      <h3>Heading Box-4</h3>
-      <p>
-        Nobis facilis ab alias omnis ipsa explicabo architecto perferendis
-        dolores doloribus eligendi unde deserunt illo inventore, corrupti
-        repellat temporibus vero!
-      </p>
+      <div class="box" id="box-4">
+        <h3>Heading Box-4</h3>
+        <p>
+          Nobis facilis ab alias omnis ipsa explicabo architecto perferendis
+          dolores doloribus eligendi unde deserunt illo inventore, corrupti
+          repellat temporibus vero!
+        </p>
+      </div>
     </div>
   </body>
 </html>
