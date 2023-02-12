@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0; /*dolgu borderle içerik arası borderden uzaklaştırıyor*/
+        box-sizing: border-box; /* Kutu biçimine almış oluyoruz */
+      }
+
+      .box {
+        background-color: aliceblue;
+        border: 3px gray solid;
+        width: 400px;
+
+        /* Padding on all sides */
+        padding: 10px;
+
+        /* Padding on each side */
+        padding-top: 55px;
+        padding-right: 40px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+
+        /* padding on each side shorthand top-right-bottom-left */
+        padding: 30px 60px 90px 120px;
+
+        /* padding shorthand top-horizontal-bottom */
+        padding: 20px 40px 60px;
+
+        /* padding shorthand vedrtical(top-bottom), horizontal(right-left) */
+        padding: 25px 30px;
+
+        /* margin on all sides */
+        margin: 10px;
+
+        /* margin on each side */
+        margin-top: 30px;
+        margin-right: 80px;
+        margin-bottom: 120px;
+        margin-left: 90px;
+
+        /* margin shorthand top-horizontal-bottom */
+        margin: 40px 50px 60px;
+
+        /* margin shorthand vertical(top-bottom), horizontal(right-left) */
+        margin: 25px 30px;
+      }
+
+      .box h3{
+        /* h3 yukarı çıkıyor manüple edilmiş oluyor. */
+        margin-top: -10px;
+        /* örneğin - 50 olduğunda kutu dışına çıkıor divin üstünde aslında içinde değil
+        eksi kullanmak çok kulanılan bir durum değil. */
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- (.box>h3{Box $}p>(lorem30))*2 -->
+    <div class="box">
+      <h3>Box 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum eum,
+        et asperiores sed, iusto tempore nemo esse, fugit ea amet at. Tempore,
+        possimus molestias. Vitae asperiores laudantium perspiciatis voluptatem
+        sint!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box 2</h3>
+      <p>
+        Ea id consectetur sint iusto cum delectus hic veritatis reprehenderit
+        voluptatem aperiam in, harum, fugiat porro iure error omnis dolores
+        numquam repellat soluta, ratione totam sequi repudiandae adipisci.
+        Dolor, eaque.
+      </p>
+    </div>
+  </body>
+</html>
