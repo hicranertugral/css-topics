@@ -12,9 +12,18 @@
             padding: 0;
         }
       .container {
+        min-width: 450px;
+        height: 500px;
+        border: solid 3px gray;
+        display: flex;
+        /* tam tersine çeviriyor ufuk çizgisine göre simetriğini alıyor */
+        flex-direction: column-reverse;
       }
 
       .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(110, 105, 106);
       }
 
       #box-1 {
