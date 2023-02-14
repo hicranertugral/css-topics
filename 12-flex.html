@@ -69,10 +69,9 @@
         flex-grow: 1;
         flex-shrink: 0;
         /* yukarıdaki iki seçenek çalışması için flex wrapı kapatıyoruz. */
-
       }
 
-      .box{
+      .box {
         width: 100px;
         height: 100px;
         border: 1px solid rgb(110, 105, 106);
@@ -88,6 +87,15 @@
       }
       #box-2 {
         background-color: rgb(168, 109, 37);
+        /* order : dğzen containerın çocuklarından bahsediyoruz. box 2 ye order değeri -1 verdiğimizde başa geçiyor*/
+        order: -1;
+        /* Flex-grow çocuğa veriliyor. seçili olan ulaşabildiği kadar büyüyor küçülürken eşit olıyor büyümeyle alakalı default değeri 0 */
+        flex-grow: 2;
+        /* flex-shrink küçülme hali default değeri 1 */
+        flex-shrink: 2;
+
+        /*bir tane elemanımın farklı yerde gözükmesini istediğimde cros axis te yer değiştiri  */
+        align-self: flex-end;
       }
       #box-3 {
         background-color: rgb(67, 141, 60);
@@ -99,10 +107,15 @@
       }
       #box-5 {
         background-color: rgb(163, 106, 165);
+        /*  flex shorthand  flex grow / flex shirink / flexbasis */
+        flex: 0 0 80px;
       }
       #box-6 {
         background-color: rgb(158, 173, 159);
-        height: 300px;
+        height: 250px;
+
+        /* kalan yerler dağıtılmadan önce verilen yer alanı bunu bi kenara ayır diyoruz ( flex grow kullanıyorken ) */
+        flex-basis: 250px;
       }
     </style>
   </head>
@@ -112,16 +125,12 @@
       <div class="box" id="box-1">Box-1</div>
       <div class="box" id="box-2">Box-2</div>
       <div class="box" id="box-3">Box-3</div>
-      <div class="box" id="box-4">Box-4</div>
       <div class="box" id="box-5">Box-5</div>
       <div class="box" id="box-6">Box-6</div>
-      <div class="box" id="box-1">Box-1</div>
+      <div class="box" id="box-1">Box-7</div>
       <div class="box" id="box-2">Box-2</div>
-      <div class="box" id="box-3">Box-3</div>
-      <div class="box" id="box-4">Box-4</div>
-      <div class="box" id="box-5">Box-5</div>
-
-      <div class="box" id="box-2">Lorem, ipsum dolor</div>
+      <div class="box" id="box-3">Box-9</div>
+      <div class="box" id="box-5">Box-10</div>
     </div>
   </body>
 </html>
