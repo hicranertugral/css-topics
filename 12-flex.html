@@ -18,6 +18,12 @@
         display: flex;
         /* tam tersine çeviriyor ufuk çizgisine göre simetriğini alıyor */
         flex-direction: column-reverse;
+        /* satırda tam tersine çeviriyor. cross aise göre tersini alıyor. main start olmuş oldu box-1 in geldiği yer */
+        flex-direction: row-reverse;
+        /* default değeri */
+        flex-direction: row;
+        /* wrap sarmallama yapıyor sığmayanlar aşağıda iniyor. */
+        flex-wrap: wrap;
       }
 
       .box {
@@ -49,6 +55,24 @@
   <body>
     <!-- .container>(.box#box-${Box-$})*6 -->
     <div class="container">
+      <div class="box" id="box-1">Box-1</div>
+      <div class="box" id="box-2">Box-2</div>
+      <div class="box" id="box-3">Box-3</div>
+      <div class="box" id="box-4">Box-4</div>
+      <div class="box" id="box-5">Box-5</div>
+      <div class="box" id="box-6">Box-6</div>
+      <div class="box" id="box-1">Box-1</div>
+      <div class="box" id="box-2">Box-2</div>
+      <div class="box" id="box-3">Box-3</div>
+      <div class="box" id="box-4">Box-4</div>
+      <div class="box" id="box-5">Box-5</div>
+      <div class="box" id="box-6">Box-6</div>
+      <div class="box" id="box-1">Box-1</div>
+      <div class="box" id="box-2">Box-2</div>
+      <div class="box" id="box-3">Box-3</div>
+      <div class="box" id="box-4">Box-4</div>
+      <div class="box" id="box-5">Box-5</div>
+      <div class="box" id="box-6">Box-6</div>
       <div class="box" id="box-1">Box-1</div>
       <div class="box" id="box-2">Box-2</div>
       <div class="box" id="box-3">Box-3</div>
