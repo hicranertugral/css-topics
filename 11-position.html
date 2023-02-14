@@ -6,24 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css Position</title>
     <style>
+      * {
+        /* verdiğimiz gelişliğe padding ve borderı sığdırıyor */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper{
+        padding: 10px;
+        width: 850px;
+        border: 5px solid darkblue
+      }
+      .container{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: bisque;
+        border: 2px solid brown
 
+      }
       .box {
         width: 100px;
         height: 100px;
         border: 2px solid gray;
         font-weight: bold;
         text-align: center;
-        
       }
 
       #box-1 {
         background-color: plum;
+        /* Default */
+        position: static;
+        /* top, right, bottm, left 
+        (göreceli olması gerektiği yerden ne kadar uzaklaşacağını */
+        position: relative;
+        /* relative verdiğimiz için 1 nolu box  */
+        top: 50px;
+        left: 50px;
       }
       #box-2 {
-        background-color: goldenrod;
+        width: 100px;
+        /* ekrandaki diğer şeyleri ittirmiyor. */
+        background-color: rgba(221, 167, 32, 0.9);
+        position: absolute;
+        bottom: 0;
+        right: 0;
       }
       #box-3 {
         background-color: skyblue;
+                
       }
       #box-4 {
         background-color: slateblue;
@@ -36,10 +67,12 @@
   <body>
     <div class="wrapper">
       <div class="box" id="box-1">1</div>
+
       <div class="container">
         <div class="box" id="box-2">2</div>
         <div class="box" id="box-3">3</div>
       </div>
+
       <div class="box" id="box-4">4</div>
       <div class="box" id="box-5">5</div>
     </div>
