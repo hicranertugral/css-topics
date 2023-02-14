@@ -12,18 +12,17 @@
         margin: 0;
         padding: 0;
       }
-      .wrapper{
+      .wrapper {
         padding: 10px;
         width: 850px;
-        border: 5px solid darkblue
+        border: 5px solid darkblue;
       }
-      .container{
+      .container {
         position: relative;
         width: 500px;
         height: 500px;
         background-color: bisque;
-        border: 2px solid brown
-
+        border: 2px solid brown;
       }
       .box {
         width: 100px;
@@ -56,17 +55,20 @@
         background-color: skyblue;
         position: absolute;
         right: 250px;
-        top: 0px;        
-
+        top: 0px;
       }
       #box-4 {
         background-color: slateblue;
         position: fixed;
         top: 0;
-        
       }
       #box-5 {
         background-color: yellowgreen;
+        /* mevcut kapsayıcının dışına çıkamıyor */
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        top: 100px;
       }
     </style>
   </head>
