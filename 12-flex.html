@@ -72,11 +72,15 @@
 
       }
 
-      .box {
+      .box{
         width: 100px;
         height: 100px;
         border: 1px solid rgb(110, 105, 106);
-        text-align: center;
+        /* text-align: center; */
+        /* yazıları ortalamak için kullanıyoruz. */
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       #box-1 {
@@ -87,15 +91,18 @@
       }
       #box-3 {
         background-color: rgb(67, 141, 60);
+        height: 200px;
       }
       #box-4 {
         background-color: rgb(92, 82, 185);
+        height: 50px;
       }
       #box-5 {
         background-color: rgb(163, 106, 165);
       }
       #box-6 {
         background-color: rgb(158, 173, 159);
+        height: 300px;
       }
     </style>
   </head>
