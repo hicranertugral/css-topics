@@ -57,6 +57,18 @@
         /* ortalıyor tam ortadan bir çizgi geçtiğini hayal edersek tam ikiye bölünmüş oluyor. */
         align-items: center;
 
+        /* align-content => multiline birden fazla satırda flex tarafından işaretlenmiş çocuk varsa ve wrap açıksa */
+        /* flex-wrap: wrap; sıkışmasını istemediğimiz için bunu yapıyoruz. üstte yazılanlar ezilir. */
+        align-content: content;
+        /* nowrap yazdığımızda skıştırma işlemi yapılmaz.  */
+        /* flex-wrap: nowrap; */
+        gap: 10px 50px; /*row, column */
+        row-gap: 50px;
+        column-gap: 40px;
+        /* flex-grow cocuğa veriliyor. seçili olan ulaşabildiği kadar büyüyor. küçülürken eşit oluyor. büyüme ile alakalı default değeri 0*/
+        flex-grow: 1;
+        flex-shrink: 0;
+        /* yukarıdaki iki seçenek çalışması için flex wrapı kapatıyoruz. */
 
       }
 
@@ -65,8 +77,6 @@
         height: 100px;
         border: 1px solid rgb(110, 105, 106);
         text-align: center;
-        line-height: 30px;
-        padding-top: 40px;
       }
 
       #box-1 {
@@ -104,7 +114,7 @@
       <div class="box" id="box-4">Box-4</div>
       <div class="box" id="box-5">Box-5</div>
 
-      <div class="box" id="box-2">Lorem, ipsum dolor </div>
+      <div class="box" id="box-2">Lorem, ipsum dolor</div>
     </div>
   </body>
 </html>
