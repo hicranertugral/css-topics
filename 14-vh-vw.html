@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vh & Vw</title>
+    <style>
+        /* viewport: kullanıcının görünebilir olan kısmı */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+        }
+        header{
+            background: rgb(130, 189, 212) url("https://source.unsplash.com/1920x1080/?cloud") no-repeat center center/cover;
+            /* görünenin tamamını kaplasın dediğimiz için 100vh verdik bir tık aşağıya indiğimizde göreceğiz. */
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 1.5rem;
+            color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1{
+            font-size: 3rem;
+        }
+        header p{
+            margin: 1rem;
+        }
+        .btn{
+            display: inline-block; /* inline bir tag olduğu için inline block yaptık.*/
+            background-color: transparent;
+            border: 2px solid beige;
+            border-radius: 25px;
+            padding: 0.75rem 2rem;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- header>div>(h1>(lorem5))(p>(lorem25))+(a.btn>{Learn More}) -->
+    <header>
+        <div>
+          <h1>Welcome to Kyble Softwew Solutions</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam a ex
+            quae libero recusandae tempore vel, et facere nobis odit, numquam
+            sapiente, nostrum beatae aspernatur omnis? Ea eaque impedit eveniet.
+          </p>
+          <a href="" class="btn">Learn More</a>
+        </div>
+      </header>
+    <!-- section>(h3>{About Us})+(p>lorem40) -->
+    <section>
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+          accusantium eaque incidunt illum accusamus pariatur veniam quo? Fugiat
+          suscipit explicabo ex quidem, nulla perferendis consectetur quos
+          dignissimos, reiciendis ad ea.
+        </p>
+      </section>
+  </body>
+</html>
