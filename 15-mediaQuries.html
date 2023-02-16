@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: cornflowerblue;
+        align-items: center;
+        justify-content: center;
+      }
+      .container div {
+        margin-top: 50px;
+        font-size: 30px;
+      }
+
+      /* Smartphone */
+      @media (max-width: 500px) {
+        .container {
+          background-color: cornsilk;
+        }
+        #smartPhone {
+          color: blueviolet;
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+
+      /* Tablet */
+      @media (min-width: 501px) and (max-width: 768px) {
+        .container {
+          background-color: chocolate;
+        }
+
+        #tablet {
+          color: blueviolet;
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+
+      /* Normal */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        #normal {
+          color: brown;
+        }
+      }
+
+      /* WideScreen */
+
+      @media (min-width: 1200px) {
+        .container {
+          background-color: darkkhaki;
+        }
+
+        #wideScreen {
+          color: blueviolet;
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+
+      /* LandSpace */
+      @media (max-height: 500px) {
+        .container {
+          background-color: darkseagreen;
+        }
+        #landScape {
+          color: blueviolet;
+          font-weight: bold;
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="smartPhone">SmartPhone</div>
+      <div id="tablet">Tablet</div>
+      <div id="normal">Normal</div>
+      <div id="wideScreen">WideScreen</div>
+      <div id="landScape">LandScape</div>
+    </div>
+  </body>
+</html>
